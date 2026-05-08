@@ -146,6 +146,64 @@ input:focus {
     border-color: transparent;
 }
 
+/* --- FORMULARIOS: Secciones verticales y responsivas --- */
+.form-section {
+    max-width: 820px;
+    margin: 20px auto;
+    padding: 18px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.03);
+    border-radius: 12px;
+}
+
+.form-section h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-section label {
+    font-weight: 600;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="tel"],
+.form-section input[type="password"],
+.form-section textarea,
+.form-section button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--outline);
+    font-size: 1rem;
+}
+
+.form-section textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-section button {
+    background: var(--primary);
+    color: var(--on-primary);
+    border: none;
+    cursor: pointer;
+    padding: 12px 14px;
+    font-weight: 700;
+}
+
+@media (min-width: 900px) {
+    .form-section { max-width: 600px; }
+}
+
 /* --- BOTÓN --- */
 .button-44 {
     background-color: var(--primary);

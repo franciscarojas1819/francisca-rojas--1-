@@ -45,7 +45,7 @@
         </article>
 
         <!-- Formulario de contacto -->
-        <section id="contacto">
+        <section id="contacto" class="form-section">
             <h2>Formulario de Contacto</h2>
             <form action="/enviar" method="POST">
                 <label for="nombre">Nombre:</label>
@@ -68,16 +68,16 @@
         </section>
 
         <!-- LOGIN -->
-        <section id="contacto">
+        <section id="login" class="form-section">
             <h2>LOGIN</h2>
             <form action="/login" method="POST">
                 <label for="usuario">Usuario:</label>
                 <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
 
                 <label for="clave">Clave:</label>
-                <input type="text" id="clave" name="clave" placeholder="Ingrese su clave" required>
+                <input type="password" id="clave" name="clave" placeholder="Ingrese su clave" required>
 
-                <button type="submit">Enviar al Servidor</button>
+                <button type="submit">Ingresar</button>
             </form>
         </section>
 
