@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba número 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Animes</h1>
+        <h2>Santo Tomás</h2>
+        <nav>
+            <ul>
+                <li><a href="https://www.tiendalego.cl/">Inicio</a></li>
+                <li><a href="https://www.crunchyroll.com/">Crunchyroll</a></li>
+                <li><a href="https://jkanime.net/">Jkanime</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img id="Imagen" src="OIP.jpg" alt="Imagen de ejemplo">
+
+    <main>
+        <!-- Sección principal -->
+        <section id="hero">
+            <h2>Páginas para ver o comprar productos de anime</h2>
+            <p>Vive la emoción más grande viendo los mejores animes del mundo.</p>
+        </section>
+
+        <!-- Servicios -->
+        <h3>Nuestros Servicios</h3>
+        <section id="servicios">
+            <div>Streaming de Anime</div>
+            <div>Venta de Figuras</div>
+            <div>Noticias y Reseñas</div>
+        </section>
+
+        <!-- Preguntas frecuentes -->
+        <article id="preguntas">
+            <h3>Preguntas Frecuentes</h3>
+            <p>¿Dónde puedo ver anime gratis? → En Crunchyroll y Jkanime.</p>
+            <p>¿Dónde comprar figuras? → En Tienda Lego y otras tiendas especializadas.</p>
+        </article>
+
+        <!-- Formulario de contacto -->
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form action="/enviar" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono">
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" placeholder="Tu comentario aquí"></textarea>
+
+                <button type="submit">Enviar al Servidor</button>
+            </form>
+        </section>
+
+        <!-- LOGIN -->
+        <section id="contacto">
+            <h2>LOGIN</h2>
+            <form action="/login" method="POST">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+
+                <label for="clave">Clave:</label>
+                <input type="text" id="clave" name="clave" placeholder="Ingrese su clave" required>
+
+                <button type="submit">Enviar al Servidor</button>
+            </form>
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <h4>Noticias Recientes</h4>
+            <p>¡Nuevo estreno de temporada en Crunchyroll!</p>
+        </aside>
+
+        <!-- Redes sociales -->
+        <div class="redes-sociales">
+            <h2>Nuestras Redes Sociales</h2>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.facebook.com/?locale=es_LA">Facebook</a>
+            <a href="https://x.com/?lang=es">Twitter</a>
+            <a href="https://www.whatsapp.com/?lang=es">WhatsApp</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Primer examen Programación Web - Francisca Rojas</p>
+    </footer>
+</body>
+
+</html>

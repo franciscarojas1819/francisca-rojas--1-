@@ -1,0 +1,227 @@
+/* --- VARIABLES MATERIAL 3 (SISTEMA DE COLORES) --- */
+:root {
+    --primary: #ad93ab;
+    /* Azul profundo M3 */
+    --on-primary: #ffffff;
+    --primary-container: #d1e4ff;
+    --on-primary-container: #001d36;
+    --surface: #fdfcff;
+    --outline: #74777f;
+    --surface-variant: #e0e2ec;
+    --on-surface-variant: #44474e;
+}
+
+/* --- ESTILOS BASE --- */
+* {
+    box-sizing: border-box;
+    /* Fundamental para que el padding no rompa el ancho */
+}
+
+body {
+    background-color: var(--surface);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1a1c1e;
+    line-height: 1.6;
+}
+
+/* --- HEADER Y NAVEGACIÓN --- */
+header {
+    background-color: var(--primary);
+    color: var(--on-primary);
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    /* Móvil por defecto: elementos uno sobre otro */
+    align-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    color: #4b9762;
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: var(--on-primary);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#Imagen {
+    width: '30%';
+    height: '30%';
+    max-width: 500px;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* --- IMAGEN RESPONSIVA --- */
+img {
+    display: block;
+    max-width: 100%;
+    /* No se sale de su contenedor */
+    height: auto;
+    border-radius: 16px;
+    /* Bordes más redondeados estilo M3 */
+    margin: 20px auto;
+}
+
+/* --- SECCIONES (CARDS) --- */
+section,
+article,
+aside {
+    background-color: rgb(128, 111, 111);
+    padding: 20px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--surface-variant);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#servicios {
+    display: grid;
+    /* Grid es mejor para servicios */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+#servicios div {
+    background: var(--primary-container);
+    color: var(--on-primary-container);
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+/* --- FORMULARIO --- */
+form {
+    max-width: 500px;
+    margin: 0 auto 24px auto;
+}
+
+#input-nombre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--outline);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Validación Material Style */
+input:focus {
+    outline: 2px solid var(--primary);
+    border-color: transparent;
+}
+
+/* --- BOTÓN --- */
+.button-44 {
+    background-color: var(--primary);
+    color: rgb(231, 164, 164);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 100px;
+    /* Botón tipo píldora M3 */
+    font-weight: 600;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.button-44:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+}
+
+/* --- REDES SOCIALES --- */
+.redes-sociales {
+    text-align: center;
+    padding: 20px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 10px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--surface-variant);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: var(--on-surface-variant);
+}
+
+/* --- MEDIA QUERIES (EL CORAZÓN DEL RESPONSIVE) --- */
+
+/* Tablet y Desktop (Pantallas mayores a 768px) */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        /* Menú en fila */
+        justify-content: space-between;
+    }
+
+    header h2 {
+        display: block;
+    }
+
+    /* Ajuste de formulario para que no sea tan gigante en PC */
+    form {
+        padding: 40px;
+    }
+}
+
+/* Mobile (Pantallas pequeñas) */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        /* En celular, los links van uno abajo de otro */
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
